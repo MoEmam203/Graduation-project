@@ -1,6 +1,7 @@
 /** Start Sass Components **/
-$mainColor: #a17fe0;
-$secondColor: #fff;
+$mainColor: #A9D7E4;
+$secondaryColor: #f58787;
+$ThirdColor: #fff;
 $borderColor: #777;
 $fontColor: #555;
 
@@ -54,12 +55,12 @@ body {
   /** Start container Div Style **/
   width: 70%;
   height: 500px;
-  background-color: $secondColor;
+  background-color: $ThirdColor;
   position: absolute;
   top: 50%;
   left: 50%;
   @include translate(-50%, -50%);
-  box-shadow: 8px 8px 25px $secondColor, -8px -8px 25px $mainColor;
+  box-shadow: 8px 8px 25px $mainColor, -8px -8px 25px $secondaryColor;
   @include bRadius(15px, 15px, 15px, 15px);
   /** Start form_info Div Style **/
   .form_info {
@@ -82,7 +83,7 @@ body {
           left: 17%;
           width: 15%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: $secondaryColor;
         }
       }
       label {
@@ -133,7 +134,7 @@ body {
             width: 20px;
             height: 20px;
             @include bRadius(50%, 50%, 50%, 50%);
-            border: 3px solid #a17fe0  ;
+            border: 3px solid $mainColor ;
             display: block;
             position: absolute;
             top: 0;
@@ -143,7 +144,7 @@ body {
               width: 8px;
               height: 8px;
               @include bRadius(50%, 50%, 50%, 50%);
-              background: #a17fe0;
+              background: $mainColor;
               display: block;
               position: absolute;
               top: 50%;
@@ -169,8 +170,8 @@ body {
         @include transition(0.4s);
         &:hover {
           cursor: pointer;
-          background: linear-gradient(to right, #6dd5ed , #a17fe0 ,#2193b0  );
-          color: $secondColor;
+          background: linear-gradient(to right, #f58787, #C5D8DF, #6dd5ed);
+          color: $ThirdColor;
           @include transition(0.4s);
           @include bRadius(0, 0, 0, 10px);
         }
@@ -180,13 +181,14 @@ body {
   /** Start pic Div Style **/
   .pic {
     @extend %main_dimensions;
-    background: linear-gradient(to top right, #2193b0 , #a17fe0 , #6dd5ed);
+    background: linear-gradient(to right, #6dd5ed, #C5D8DF, #f58787 );
     float: right;
     padding: 15px 15px 15px 20px;
     @include bRadius(0, 15px, 15px, 0);
     .content {
       h1 {
-        color: $secondColor;
+        color: $ThirdColor;
+        font-size: 30px;
       }
     }
     .photo {
@@ -222,6 +224,22 @@ body {
           &::after {
             left: 33%;
             width: 35%;
+          }
+        }
+        input[type="submit"] {
+          padding: 12px;
+          width: 50%;
+          position: absolute;
+          top: 84%;
+          left: 26%;
+          font-weight: bold;
+          font-size: 25px;
+          background: linear-gradient(to right, #f58787, #C5D8DF, #6dd5ed);
+          border: none;
+          color: $fontColor;
+          @include bRadius( 15px, 15px, 15px, 15px);
+          &:hover {
+            @include bRadius( 15px, 15px, 15px, 15px);
           }
         }
       }
