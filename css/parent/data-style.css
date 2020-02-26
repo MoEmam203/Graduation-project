@@ -1,0 +1,67 @@
+/* Start Sass Componants */
+/* Mixins */
+/* End Sass Componants */
+/* Start Main Rules */
+body {
+  font-family: 'Noto Sans' , 'arial' , 'sans';
+  background-color: #212427;
+}
+
+/* End Main Rules */
+/* Start Nav Bar Style */
+.nav-bar .navbar-dark {
+  -webkit-box-shadow: 0 2px 30px #444;
+  -o-box-shadow: 0 2px 30px #444;
+  box-shadow: 0 2px 30px #444;
+}
+
+.nav-bar .navbar-dark .navbar-brand span {
+  color: #f58787;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-bar .navbar-dark .navbar-brand span:last-of-type {
+  color: #A9D7E4;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.nav-bar .navbar-dark .navbar-nav .nav-link {
+  color: #A9D7E4;
+  margin-left: 5px;
+}
+
+.nav-bar .navbar-dark .navbar-nav .active > .nav-link {
+  color: #f58787;
+}
+
+/* End Nav Bar Style */
+/* Start Data Section Style */
+.data .card {
+  background-color: #343A40;
+  width: 40% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.data .card ul li {
+  font-size: 20px;
+  color: #A9D7E4;
+}
+
+.data .card ul li span {
+  color: #f58787;
+  margin-right: 15px;
+}
+
+.data .card ul li span i {
+  margin-right: 5px;
+  color: #f58787;
+}
+
+/* End Data Section Style */
+/*# sourceMappingURL=data-style.css.map */
