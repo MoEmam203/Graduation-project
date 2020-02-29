@@ -315,3 +315,59 @@ body {
 	}
 }
 /* End General Score Section Style */
+
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+/* Start Monthly Report Section Style */
+.monthly-report {
+	@include translating(0 , 5%);
+	.card {
+		margin-bottom: 30px;
+		border: none;
+		.card-body {
+			background-color: #262c2f;
+			h3 {
+				color: $secondaryColor;
+				margin-bottom: 20px;
+			}
+			.month-score {
+				.table {	
+					@include shadow(0, 2px, 30px, #444);
+					thead {
+						.term-name {
+							color: $secondaryColor;
+							font-size: 20px;
+						}
+					}
+					th {
+						color: $mainColor;
+					}
+					td {
+						color: #dad7d7;
+						text-align: center;
+						p {
+							margin: 0 0 7px;
+						}
+					}
+				}
+			}
+			.card-text {
+				color: $mainColor;
+			}
+		}
+	}
+}
+/* Start Monthly Report section Media */
+@media (max-width: 560px) {
+	.month-score {
+		.table {
+			font-size: 12px;
+		}
+	}
+}
+/* End Monthly Report Section Style */
+
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+

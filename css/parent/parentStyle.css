@@ -284,4 +284,60 @@ body {
 }
 
 /* End General Score Section Style */
+/* Start Monthly Report Section Style */
+.monthly-report {
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+}
+
+.monthly-report .card {
+  margin-bottom: 30px;
+  border: none;
+}
+
+.monthly-report .card .card-body {
+  background-color: #262c2f;
+}
+
+.monthly-report .card .card-body h3 {
+  color: #f58787;
+  margin-bottom: 20px;
+}
+
+.monthly-report .card .card-body .month-score .table {
+  -webkit-box-shadow: 0 2px 30px #444;
+  -o-box-shadow: 0 2px 30px #444;
+  box-shadow: 0 2px 30px #444;
+}
+
+.monthly-report .card .card-body .month-score .table thead .term-name {
+  color: #f58787;
+  font-size: 20px;
+}
+
+.monthly-report .card .card-body .month-score .table th {
+  color: #A9D7E4;
+}
+
+.monthly-report .card .card-body .month-score .table td {
+  color: #dad7d7;
+  text-align: center;
+}
+
+.monthly-report .card .card-body .month-score .table td p {
+  margin: 0 0 7px;
+}
+
+.monthly-report .card .card-body .card-text {
+  color: #A9D7E4;
+}
+
+/* Start Monthly Report section Media */
+@media (max-width: 560px) {
+  .month-score .table {
+    font-size: 12px;
+  }
+}
+
+/* End Monthly Report Section Style */
 /*# sourceMappingURL=parentStyle.css.map */
