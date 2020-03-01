@@ -1,4 +1,11 @@
 /** Start Sass Components **/
+/* Mixins */
+/* Extended Classes */
+.container .form_info, .container .pic {
+  width: 50%;
+  height: 500px;
+}
+
 /** End Sass Components **/
 /** Start Main Rules **/
 * {
@@ -8,7 +15,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #212427;
   font-family: 'Martel Sans', sans-serif;
 }
 
@@ -195,13 +202,6 @@ body {
   height: 400px;
 }
 
-/** Start Classes To Extend **/
-.container .form_info, .container .pic {
-  width: 50%;
-  height: 500px;
-}
-
-/** End Classes To Extend **/
 /** Start Media **/
 @media (max-width: 767px) {
   /** mobile & tablet screen **/
@@ -236,16 +236,8 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   /** small screen **/
   .container {
-    width: 80%;
+    width: 95%;
   }
-}
-
-@media (min-width: 992px) {
-  /** medium screen **/
-}
-
-@media (min-width: 1200px) {
-  /** large screen **/
 }
 
 /** End Media **/

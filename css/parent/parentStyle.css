@@ -340,4 +340,102 @@ body {
 }
 
 /* End Monthly Report Section Style */
+/* Start Complaints And Suggestion Section Style */
+.comp-and-sugg h3 {
+  color: #A9D7E4;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+.comp-and-sugg h3 span {
+  color: #f58787;
+}
+
+.comp-and-sugg form textarea {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #3f4750;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px #444;
+  -o-box-shadow: 0 0 20px #444;
+  box-shadow: 0 0 20px #444;
+}
+
+.comp-and-sugg form input[type="submit"] {
+  margin-top: 20px;
+  padding: 8px 30px;
+  font-weight: 600;
+  background-color: #f58787;
+  border: none;
+  color: #212427;
+  border-radius: 3px;
+}
+
+/* Start Complaints And Suggestion Section Media */
+@media (min-width: 448px) and (max-width: 767px) {
+  .comp-and-sugg h3 {
+    font-size: 22px;
+  }
+  .comp-and-sugg form textarea {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 447px) {
+  .comp-and-sugg h3 {
+    margin-top: 65px;
+    font-size: 20px;
+  }
+}
+
+/* Start Complaints And Suggestion Section Style */
+/* Start Change Password Section Style */
+.change-pass form {
+  margin: 70px auto;
+  width: 50%;
+}
+
+.change-pass form label {
+  display: block;
+  font-size: 20px;
+  color: #A9D7E4;
+}
+
+.change-pass form input[type="password"] {
+  background-color: #3f4750;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.change-pass form input[type="submit"] {
+  display: block;
+  color: #212427;
+  background-color: #f58787;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 3px;
+}
+
+/* Start Change Password Section Media */
+@media (min-width: 768px) and (max-width: 991px) {
+  .change-pass form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .change-pass form {
+    width: 90%;
+  }
+}
+
+/* End Change Password Section Style */
 /*# sourceMappingURL=parentStyle.css.map */

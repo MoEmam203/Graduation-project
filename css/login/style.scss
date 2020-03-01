@@ -4,40 +4,41 @@ $secondaryColor: #f58787;
 $ThirdColor: #fff;
 $borderColor: #777;
 $fontColor: #555;
-
+/* Mixins */
 @mixin translate($x, $y) {
   -webkit-transform: translate($x, $y);
   -moz-transform: translate($x, $y);
   -o-transform: translate($x, $y);
   transform: translate($x, $y);
 }
-
 @mixin translate-scale($x, $y, $s) {
   -webkit-transform:translate($x, $y) scale($s);
   -moz-transform:translate($x, $y) scale($s);
   -o-transform:translate($x, $y) scale($s);
   transform:translate($x, $y) scale($s);
 }
-
 @mixin boxSizing($prop) {
   -webkit-box-sizing: $prop;
   -moz-box-sizing: $prop;
   -o-box-sizing: $prop;
   box-sizing: $prop;
 }
-
 @mixin bRadius($r1, $r2, $r3, $r4) {
   -webkit-border-radius: $r1 $r2 $r3 $r4;
   -moz-border-radius: $r1 $r2 $r3 $r4;
   -o-border-radius: $r1 $r2 $r3 $r4;
   border-radius: $r1 $r2 $r3 $r4;
 }
-
 @mixin transition($t) {
   -webkit-transition: $t all ease-in-out;
   -moz-transition: $t all ease-in-out;
   -o-transition: $t all ease-in-out;
   transition: $t all ease-in-out;
+}
+/* Extended Classes */
+%main_dimensions {
+  width: 50%;
+  height: 500px;
 }
 /** End Sass Components **/
 
@@ -46,7 +47,7 @@ $fontColor: #555;
   @include boxSizing(border-box);
 }
 body {
-  background-color: #000;
+  background-color: #212427;
   font-family: 'Martel Sans', sans-serif;
 }
 /** End Main Rules **/
@@ -202,14 +203,6 @@ body {
     }
   }
 }
-
-/** Start Classes To Extend **/
-%main_dimensions {
-  width: 50%;
-  height: 500px;
-}
-/** End Classes To Extend **/
-
 /** Start Media **/
 @media(max-width: 767px) { /** mobile & tablet screen **/
 /** Start form_info Div Style **/
@@ -247,16 +240,8 @@ body {
 
 @media(min-width: 768px) and (max-width: 991px) { /** small screen **/
   .container {
-    width: 80%;
+    width: 95%;
   }
-}
-
-@media(min-width: 992px) { /** medium screen **/
-
-} 
-
-@media(min-width: 1200px) { /** large screen **/
-
 }
 /** End Media **/
 
