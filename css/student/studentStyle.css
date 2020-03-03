@@ -340,6 +340,146 @@ body {
 }
 
 /* End Monthly Report Section Style */
+/* Start Exam Section Style */
+.exam form {
+  border: 2px solid #343A40;
+  background-color: #262c2f;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 25px #444;
+  -o-box-shadow: 0 0 25px #444;
+  box-shadow: 0 0 25px #444;
+}
+
+.exam form .info {
+  border-bottom: 2px solid #343A40;
+  padding: 10px;
+}
+
+.exam form .info .logo span {
+  color: #f58787;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 120px;
+  margin-left: 10px;
+}
+
+.exam form .info .logo span:last-of-type {
+  color: #A9D7E4;
+  font-weight: normal;
+  font-size: 25px;
+  margin-left: 0;
+}
+
+.exam form .info .info-box {
+  color: #A9D7E4;
+}
+
+.exam form .questions .singl-question {
+  padding: 20px;
+  font-size: 20px;
+  color: #999;
+}
+
+.exam form .questions .singl-question p {
+  color: #A9D7E4;
+}
+
+.exam form .questions .singl-question p span {
+  color: #f58787;
+}
+
+.exam form .questions .singl-question .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -10px;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group {
+  margin: -15px;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-left: 100px;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio input[type="radio"] {
+  display: none;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio input[type="radio"]:checked ~ .circle::after {
+  background-color: #f58787;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio input[type="radio"]:checked ~ .circle {
+  border: 3px solid #f58787;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio input[type="radio"]:checked ~ .answer {
+  color: #f58787;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #999;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.exam form .questions .singl-question .radio-container .radio-group .radio .circle::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #999;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all 0.03s ease-in-out;
+  transition: all 0.03s ease-in-out;
+}
+
+.exam form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-top: 2px solid #343A40;
+  color: #262C2F;
+  font-weight: 700;
+  background-color: #f58787;
+}
+
+/* Start Exam Section Media */
+@media (max-width: 991px) {
+  .nav-bar .navbar .navbar-nav .nav-item .hidde-exam {
+    display: none;
+  }
+}
+
+/* End Exam Section Style */
 /* Start Change Password Section Style */
 .change-pass form {
   margin: 70px auto;

@@ -20,6 +20,12 @@ $secondaryColor: #f58787;
 	-o-transform: translate($t1, $t2);
 	transform: translate($t1, $t2);
 }
+@mixin translate-scale ($t3 , $t4 , $k1) {
+	-webkit-transform: translate($t3 , $t4) scale($k1);
+	-moz-transform: translate($t3 , $t4) scale($k1);
+	-o-transform: translate($t3 , $t4) scale($k1);
+	transform: translate($t3 , $t4) scale($k1);
+}
 @mixin transitioning ($tg) {
 	-webkit-transition: all $tg ease-in-out;
 	-moz-transition: all $tg ease-in-out;
@@ -371,6 +377,137 @@ body {
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 
+/* Start Exam Section Style */
+.exam {
+	form {
+		border: 2px solid #343A40;
+		background-color: #262c2f;
+		margin-top: 60px;
+		margin-bottom: 50px;
+		@include shadow(0, 0, 25px, #444)
+		.info {
+			border-bottom: 2px solid #343A40;
+			padding: 10px;
+			.logo {
+				span {
+					color: $secondaryColor;
+					font-size: 30px;
+					font-weight: bold;
+					line-height: 120px;
+					margin-left: 10px;
+					&:last-of-type {
+						color: $mainColor;
+						font-weight: normal;
+						font-size: 25px;
+						margin-left: 0;
+					}
+				}
+			}
+			.info-box {
+				color: $mainColor;
+				
+			}
+		}
+		.questions {
+			.singl-question {
+				padding: 20px;
+				font-size: 20px;
+				color: #999;
+				p {
+					color: $mainColor;
+					span {
+						color: $secondaryColor;
+					}
+				}
+				.radio-container {
+					display: flex;
+					align-items: center;
+					height: 65px;
+					padding: 0;
+					margin: 0;
+					position: relative;
+					top: -10px;
+					.radio-group {
+						margin: -15px;
+						.radio {
+							display: inline-block;
+							vertical-align: middle;
+							font-weight: bold;
+							margin-left: 100px;
+							position: relative;
+							padding-left: 25px;
+							cursor: pointer;
+							input[type="radio"] {
+								display: none;
+								&:checked ~ .circle::after {
+									background-color: $secondaryColor;
+									@include translate-scale(-50%, -50%, 1);
+								}
+								&:checked ~ .circle {
+									border: 3px solid $secondaryColor;
+								}
+								&:checked ~ .answer {
+									color: $secondaryColor;
+								}
+							}
+							.circle {
+								width: 20px;
+								height: 20px;
+								@include radius(50%);
+								border: 3px solid #999;
+								display: block;
+								position: absolute;
+								top: 5px;
+								left: 0;
+								&::after {
+									content: "";
+									width: 8px;
+									height: 8px;
+									@include radius(50%);
+									background: #999;
+									display: block;
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									@include translate-scale(-50%, -50%, 0);
+									@include transitioning(0.03s);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			border: none;
+			border-top: 2px solid #343A40;
+			color: #262C2F;
+			font-weight: 700;
+			background-color: $secondaryColor;
+		}
+	}
+}
+/* Start Exam Section Media */
+@media (max-width: 991px) {
+	.nav-bar {
+		.navbar {
+			.navbar-nav {
+				.nav-item {
+					.hidde-exam {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+/* End Exam Section Style */
+
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
 /* Start Change Password Section Style */
 .change-pass {
 	form {
@@ -416,4 +553,3 @@ body {
 	}
 }
 /* End Change Password Section Style */
-
